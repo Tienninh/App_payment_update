@@ -1,0 +1,28 @@
+.header-menu-icon{
+    color: #ff8084;
+}
+
+/* Định dạng màu nền cho ô tìm kiếm */
+.input-group input[type="search"] {
+    background-color: white;
+}
+
+/* Định dạng góc cong cho tất cả các phần tử trong input-group */
+.input-group input[type="search"],
+.input-group button {
+    border-radius: 20px;
+  
+}
+
+/* Định dạng góc cong chỉ hai góc bên phải của span */
+.input-group-text {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* border: 2px solid black;
+    opacity: 0.5; */
+    opacity: 0.7;
+}
+
+.input-group{
+    /* opacity: ; */
+}

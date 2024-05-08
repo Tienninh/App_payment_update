@@ -1,0 +1,72 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-white px-2"> <!-- Thay đổi lớp bg-dark thành bg-white -->
+    <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggled()">
+        <i class="fa-solid fa-bars header-menu-icon"></i>
+    </div>
+
+    <a class="navbar-brand px-4" href="#" style="color: #ff8084;">Header and sidenav</a> <!-- Thêm inline style để đổi màu chữ -->
+
+    <div class="navbar-collapse">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+                <a role="button" href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #ff8084;"> <!-- Thêm inline style để đổi màu chữ -->
+                    Menu 1
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="#" class="dropdown-item">item 1</a></li>
+                    <li><a href="#" class="dropdown-item">item 2</a></li>
+                    <li><a href="#" class="dropdown-item">item 3</a></li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+
+    <form action="#" class="d-flex me-5">
+        <div class="input-group">
+            <span class="input-group-text">
+                <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="search" class="form-control header-search" placeholder="Search..">
+        </div>
+    </form>
+
+    <div class="dropdown">
+        <a data-mdb-dropdown-init class="dropdown-toggle" href="#" id="Dropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="flag-united-kingdom flag m-0"></i>
+        </a>
+    
+        <ul class="dropdown-menu" aria-labelledby="Dropdown">
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-united-kingdom flag"></i>English <i class="fa fa-check text-success ms-2"></i></a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-poland flag"></i>Polski</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-china flag"></i>中文</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-japan flag"></i>日本語</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-germany flag"></i>Deutsch</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-france flag"></i>Français</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-spain flag"></i>Español</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-russia flag"></i>Русский</a>
+            </li>
+            <li>
+                <a class="dropdown-item" href="#"><i class="flag-portugal flag"></i>Português</a>
+            </li>
+        </ul>
+    </div>
+
+    
+</nav>

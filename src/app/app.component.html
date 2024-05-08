@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8 offset-2">
+      <!-- <app-payment-details />  -->
+      <!-- <app-login/> -->
+      <!-- <app-contact></app-contact> -->
+    </div>
+  </div>
+</div>
+<!-- <app-menu></app-menu> -->
+
+
+<div class="container-fluid g-0">
+  <app-header (sideNavToggled)="sideNavStatus = $event;"></app-header>
+  <main>
+    <app-menu [sideNavStatus]="sideNavStatus" [ngClass]="{'app-side-nav-open': sideNavStatus}" class="black-border"></app-menu>
+    
+    <!-- <div class="display-area" [ngClass]="{'display-area-shrink':sideNavStatus}"> -->
+      <!-- <app-content></app-content> -->
+      <!-- <app-campaign></app-campaign> -->
+    <!-- </div> -->
+    <!-- <app-dm-data-index></app-dm-data-index> -->
+    <app-content></app-content>
+  </main>
+
+</div>

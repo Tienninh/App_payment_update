@@ -1,0 +1,12 @@
+<div class="side-nav-content">
+   
+    <ul class="nav-list" [ngClass]="{'nav-list-open': sideNavStatus}">
+        <li style="list-style: none;"> <img src="../src/assets/images/dashboard/conect.png" alt=""></li>
+        <li class="nav-list-item" *ngFor="let item of list" routerLink="{{item.routerLink}}">
+            <i class="{{item.icon}}"></i>
+            <span>
+                <a routerLink="{{item.routerLink}}"><b>{{item.name}}</b></a>
+            </span>
+        </li>
+    </ul>
+</div>
